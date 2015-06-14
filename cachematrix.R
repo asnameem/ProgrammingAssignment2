@@ -4,7 +4,7 @@
 
 
 ## The function makeCacheMatrix takes a matrix as an input. Inside this function,
-## 4other functions are defined. They are: set - to set the value of the matrix, get - to get the value of the matrix
+## other functions are defined. They are: set - to set the value of the matrix, get - to get the value of the matrix
 ## setinverse - to set the inverse of the matrix, getinverse - to get the value of the inverse. The function makeCacheMatrix
 ## does not calculate the inverse of a matrix. It just sets and gets the value of a matrix and inverse.
 
@@ -21,7 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-##The function cacheSolve takes the list of functions as an input. It checks if any value is set for inverse. If yes, then it returns that value. If no value is set, then it calculates the inverse of the matrix and sets that value as the inverse.
+##The function cacheSolve takes the list of functions as an input. 
+##It checks if any value is set for inverse. If yes, then it returns that value. 
+##If no value is set, then it calculates the inverse of the matrix and sets that 
+##value as the inverse.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
